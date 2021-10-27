@@ -89,7 +89,7 @@ model.fit_generator(train_generator, steps_per_epoch =ceil(len(train_samples*3)/
                     validation_data = validation_generator, \
                     validation_steps = ceil(len(validation_samples*3)/batch_size),
                     epochs = 5, verbose = 1)
-model.save('model_3.h5')
+model.save('model.h5')
 model.summary()
 exit()
 
